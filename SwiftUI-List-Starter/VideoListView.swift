@@ -11,27 +11,15 @@ struct VideoListView: View {
     var body: some View {
         let videos = VideoList.topTen
         NavigationView{
-            List(videos, id: \..id){ video in
-                HStack{
-                    Image(video.imageName)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 70)
-                        .cornerRadius(4)
-                        .padding(.vertical,4)
-                    VStack(alignment: .leading, spacing: 4){
-                        Text(video.title)
-                            .fontWeight(.semibold)
-                            .lineLimit(2)
-                            .minimumScaleFactor(0.5)
-                        Text(video.uploadDate)
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                    }
+            ZStack{
+                Color.gray
+                    .ignoresSafeArea()
+                List(videos, id: \.id){ video in
+                    VideoItem(video: video)
                 }
+                .listStyle(GroupedListStyle())
+                .navigationTitle("Rery Top 10")
             }
-            .navigationTitle("Rery Top 10")
-            
         }
     }
 }
@@ -39,5 +27,30 @@ struct VideoListView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         VideoListView()
+    }
+}
+
+struct VideoItem: View {
+    var video:Video
+    var body: some View {
+        ZStack{
+            HStack{
+                Image(video.imageName)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 70)
+                    .cornerRadius(4)
+                    .padding(.vertical,4)
+                VStack(alignment: .leading, spacing: 4){
+                    Text(video.title)
+                        .fontWeight(.semibold)
+                        .lineLimit(2)
+                        .minimumScaleFactor(0.5)
+                    Text(video.uploadDate)
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                }
+            }
+        }
     }
 }
