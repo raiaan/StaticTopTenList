@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D6F53F328AC2F6500B2420A /* VideosDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6F53F228AC2F6500B2420A /* VideosDetailsView.swift */; };
 		EDBC4AA226334A5900D3EE9D /* SwiftUI_List_StarterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBC4AA126334A5900D3EE9D /* SwiftUI_List_StarterApp.swift */; };
 		EDBC4AA426334A5900D3EE9D /* VideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBC4AA326334A5900D3EE9D /* VideoListView.swift */; };
 		EDBC4AA626334A5A00D3EE9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBC4AA526334A5A00D3EE9D /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D6F53F228AC2F6500B2420A /* VideosDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosDetailsView.swift; sourceTree = "<group>"; };
 		EDBC4A9E26334A5900D3EE9D /* SwiftUI-List-Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-List-Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDBC4AA126334A5900D3EE9D /* SwiftUI_List_StarterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_List_StarterApp.swift; sourceTree = "<group>"; };
 		EDBC4AA326334A5900D3EE9D /* VideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		EDBC4AA026334A5900D3EE9D /* SwiftUI-List-Starter */ = {
 			isa = PBXGroup;
 			children = (
+				4D6F53F228AC2F6500B2420A /* VideosDetailsView.swift */,
 				EDBC4AA126334A5900D3EE9D /* SwiftUI_List_StarterApp.swift */,
 				EDBC4AA326334A5900D3EE9D /* VideoListView.swift */,
 				EDBC4AB126334A7100D3EE9D /* Video.swift */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDBC4AA426334A5900D3EE9D /* VideoListView.swift in Sources */,
+				4D6F53F328AC2F6500B2420A /* VideosDetailsView.swift in Sources */,
 				EDBC4AB226334A7100D3EE9D /* Video.swift in Sources */,
 				EDBC4AA226334A5900D3EE9D /* SwiftUI_List_StarterApp.swift in Sources */,
 			);
