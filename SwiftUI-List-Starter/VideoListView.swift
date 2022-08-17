@@ -15,7 +15,9 @@ struct VideoListView: View {
                 Color.gray
                     .ignoresSafeArea()
                 List(videos, id: \.id){ video in
-                    VideoItem(video: video)
+                    NavigationLink(destination: VideosDetailsView(video: video)){
+                        VideoItem(video: video)
+                    }
                 }
                 .listStyle(GroupedListStyle())
                 .navigationTitle("Rery Top 10")
